@@ -1,0 +1,41 @@
+# === General ===
+*.log
+*.tmp
+*.swp
+*.bak
+.DS_Store
+Thumbs.db
+
+# === Node (React frontend) ===
+/frontend/node_modules/
+/frontend/build/
+/frontend/dist/
+/frontend/.env
+/frontend/.next/
+/frontend/.cache/
+
+# === Java (Spring Boot backend with Maven) ===
+/backend/target/
+/backend/.env
+
+# === Maven Wrapper ===
+/backend/mvnw
+/backend/mvnw.cmd
+/backend/.mvn/
+
+# === IDEs and Editors ===
+*.iml
+.idea/
+/.vscode/
+
+# === OS-specific ===
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# === Docker ===
+*.tar
+docker-compose.override.yml
+
+# === Environment Files ===
+.env
