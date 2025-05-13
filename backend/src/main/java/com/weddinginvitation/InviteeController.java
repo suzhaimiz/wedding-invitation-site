@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/invitee")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "http://localhost:3000")
 public class InviteeController {
 
   @Autowired
@@ -19,7 +19,7 @@ public class InviteeController {
       return "Invitee already exists!";
     }
     repo.save(invitee);
-    return "http://localhost:5173/?to=" + invitee.getName().replace(" ", "%20");
+    return "http://localhost:3000/?to=" + invitee.getName().replace(" ", "%20");
   }
 
 @GetMapping
